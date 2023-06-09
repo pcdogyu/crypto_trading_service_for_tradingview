@@ -25,7 +25,7 @@ elif os.path.exists('./config.ini'):
             config[i][j] = conf.get(i, j)
     config['account']['enable_proxies'] = config['account']['enable_proxies'].lower() == "true"
     # config['trading']['enable_stop_loss'] = config['trading']['enable_stop_loss'].lower() == "true"
-    config['trading']['enable_stop_gain'] = config['trading']['enable_stop_gain'].lower() == "true"
+    # config['trading']['enable_stop_gain'] = config['trading']['enable_stop_gain'].lower() == "true"
 else:
     logging.info("配置文件 config.json 不存在，程序即将退出")
     exit()
